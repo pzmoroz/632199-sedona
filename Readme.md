@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/21/user/632199).
-* Наставник: `Неизвестно`.
+* Студент: [Юрий Лодейкин](https://up.htmlacademy.ru/htmlcss/21/user/632199).
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
