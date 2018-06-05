@@ -7,6 +7,9 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="http://via.placeholder.com/60x50" width="60" height="50" alt="Логотип сайта города Седона">
+        </a>
         <ul class="site-navigation">
           <li><a href="info.html">информация</a></li>
           <li><a href="media.html">фото и видео</a></li>
@@ -42,89 +45,75 @@
       </section>
 
       <section class="hotels">
-        <ul class="hotels-list">
-          <li class="hotel-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="hotel-item-title">Amara Resort & SPA</span>
-              </a>
-            </h3>
-            <img src="http://via.placeholder.com/100x60" alt="Amara Resort & SPA" width="100" height="60" >
-            <div class="hotel-item-properties">
-              <table>
-                <tr>
-                  <td>гостиници</td>
-                  <td>от 4000 р.</td>
-                </tr>
-              </table>
-            </div>
-            <div class="hotel-item-buttons">
-              <a class="hotel-item-button-detail">Подробнее</a>
-              <a class="hotel-item-button-booking">Забронировать</a>
-            </div>
-            <div class="hotel-item-rating">
-              <div class="hotel-item-rating-stars"></div>
-              <p>
-                <span>Рейтинг:</span>
-                <span class="hotel-item-rating-value">8,5</span>
-              </p>
-            </div>
-          </li>
-          <li class="hotel-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="hotel-item-title">Desert Quail INN</span>
-              </a>
-            </h3>
-            <img src="http://via.placeholder.com/100x60" alt="Desert Quail INN" width="100" height="60" >
-            <div class="hotel-item-properties">
-              <table>
-                <tr>
-                  <td>мотель</td>
-                  <td>от 3000 р.</td>
-                </tr>
-              </table>
-            </div>
-            <div class="hotel-item-buttons">
-              <a class="hotel-item-button-detail">Подробнее</a>
-              <a class="hotel-item-button-booking">Забронировать</a>
-            </div>
-            <div class="hotel-item-rating">
-              <div class="hotel-item-rating-stars"></div>
-              <p>
-                <span>Рейтинг:</span>
-                <span class="hotel-item-rating-value">8,9</span>
-              </p>
-            </div>
-          </li>
-          <li class="hotel-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="hotel-item-title">Villas at Poco Diablo</span>
-              </a>
-            </h3>
-            <img src="http://via.placeholder.com/100x60" alt="Villas at Poco Diablo" width="100" height="60" >
-            <div class="hotel-item-properties">
-              <table>
-                <tr>
-                  <td>апартаменты</td>
-                  <td>от 2000 р.</td>
-                </tr>
-              </table>
-            </div>
-            <div class="hotel-item-buttons">
-              <a class="hotel-item-button-detail">Подробнее</a>
-              <a class="hotel-item-button-booking">Забронировать</a>
-            </div>
-            <div class="hotel-item-rating">
-              <div class="hotel-item-rating-stars"></div>
-              <p>
-                <span>Рейтинг:</span>
-                <span class="hotel-item-rating-value">9,2</span>
-              </p>
-            </div>
-          </li>
-        </ul>
+        <h2 class="visually-hidden">Список отелей</h2>
+        <table>
+          <thead>
+            <tr>
+              <td>Наименовани</td>
+              <td>Количество звезд</td>
+              <td>Тип</td>
+              <td>Цена</td>
+              <td>Рейтинг</td>
+              <td>Картинка</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="hotel-name">Amara Resort &amp; SPA</td>
+              <td class="hotel-stars">4</td>
+              <td class="hotel-type">
+                <span>Гостиница</span>
+                <a class="hotel-type-button hotel-type-button-detail">Подробнее</a>
+              </td>
+              <td class="hotel-price">
+                <span>от 4000 р.</span>
+                <a class="hotel-type-button hotel-type-button-booking">Забронировать</a>
+              </td>
+              <td class="hotel-rating">
+                <span>8,5</span>
+              </td>
+              <td class="hotel-foto">
+                <img src="http://via.placeholder.com/150x10" alt="Amara Resort &amp; SPA" width="150" height="100" >
+              </td>
+            </tr>
+            <tr>
+              <td class="hotel-name">Desert Quail INN</td>
+              <td class="hotel-stars">3</td>
+              <td class="hotel-type">
+                <span>Мотель</span>
+                <a class="hotel-type-button hotel-type-button-detail">Подробнее</a>
+              </td>
+              <td class="hotel-price">
+                <span>от 3000 р.</span>
+                <a class="hotel-type-button hotel-type-button-booking">Забронировать</a>
+              </td>
+              <td class="hotel-rating">
+                <span>8,9</span>
+              </td>
+              <td class="hotel-foto">
+                <img src="http://via.placeholder.com/150x100" alt="Desert Quail INN" width="150" height="100" >
+              </td>
+            </tr>
+            <tr>
+              <td class="hotel-name">Villas at Poco Diablo</td>
+              <td class="hotel-stars">2</td>
+              <td class="hotel-type">
+                <span>Апартаменты</span>
+                <a class="hotel-type-button hotel-type-button-detail">Подробнее</a>
+              </td>
+              <td class="hotel-price">
+                <span>от 2000 р.</span>
+                <a class="hotel-type-button hotel-type-button-booking">Забронировать</a>
+              </td>
+              <td class="hotel-rating">
+                <span>9,2</span>
+              </td>
+              <td class="hotel-foto">
+                <img src="http://via.placeholder.com/150x100" alt="Villas at Poco Diablo" width="150" height="100" >
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <footer class="main-footer">
         <span class="footer-slogan">#VISITSEDONA</span>
@@ -135,10 +124,10 @@
               <li><a class="social-button button-youtube" href="#">Youtube</a></li>
           </ul>
         </div>
-        <p class="footer-copyright">
-          <b>website by:</b> 
+        <div class="footer-copyright">
+          <span>website by:</span> 
           <a href="http://htmlacademy.ru"><img src="http://via.placeholder.com/40x20" alt="html-academy" width="80" height="30" ></a>
-        </p>
+        </div>
       </footer>
     </main>
   </body>
