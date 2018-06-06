@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="http://via.placeholder.com/60x50" width="60" height="50" alt="Логотип сайта города Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">информация</a></li>
+          <li><a href="media.html">фото и видео</a></li>
+          <li><a href="state-map.html">карта штата</a></li>
+          <li class="site-navigation-current"><a href="hotels.html">гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Отели Седоны</h1>
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form></form>
+      </section>
+      <section class="sorting">
+        <h2 class="visually-hidden">Сортировка</h2>
+        <div class="sorting-founded">
+          <span>Найдено:</span>
+          <span class="sorting-founded-count">3</span>
+        </div>
+        <div class="sorting-type">
+          <span>Сортировка</span>
+          <button class="sorting-type-price sorting-type-selected">по цене</button>
+          <button class="sorting-type-type">по типу</button>
+          <button class="sorting-type-rating">по рейтингу</button>
+        </div >
+        <div class="sorting-direction">
+          <button class="sorting-direction-ascending sorting-direction-selected"></button>
+          <button class="sorting-direction-descending"></button>
+        </div >
+      </section>
+      <section class="hotels">
+        <h2 class="visually-hidden">Список отелей</h2>
+        <table>
+          <thead>
+            <tr>
+              <td>Наименовани</td>
+              <td>Количество звезд</td>
+              <td>Тип</td>
+              <td>Цена</td>
+              <td>Рейтинг</td>
+              <td>Картинка</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="hotel-name">Amara Resort &amp; SPA</td>
+              <td class="hotel-stars">4</td>
+              <td class="hotel-type">
+                <span>Гостиница</span>
+                <a class="hotel-type-button hotel-type-button-detail">Подробнее</a>
+              </td>
+              <td class="hotel-price">
+                <span>от 4000 р.</span>
+                <a class="hotel-type-button hotel-type-button-booking">Забронировать</a>
+              </td>
+              <td class="hotel-rating">
+                <span>8,5</span>
+              </td>
+              <td class="hotel-foto">
+                <img src="http://via.placeholder.com/150x10" alt="Amara Resort &amp; SPA" width="150" height="100" >
+              </td>
+            </tr>
+            <tr>
+              <td class="hotel-name">Desert Quail INN</td>
+              <td class="hotel-stars">3</td>
+              <td class="hotel-type">
+                <span>Мотель</span>
+                <a class="hotel-type-button hotel-type-button-detail">Подробнее</a>
+              </td>
+              <td class="hotel-price">
+                <span>от 3000 р.</span>
+                <a class="hotel-type-button hotel-type-button-booking">Забронировать</a>
+              </td>
+              <td class="hotel-rating">
+                <span>8,9</span>
+              </td>
+              <td class="hotel-foto">
+                <img src="http://via.placeholder.com/150x100" alt="Desert Quail INN" width="150" height="100" >
+              </td>
+            </tr>
+            <tr>
+              <td class="hotel-name">Villas at Poco Diablo</td>
+              <td class="hotel-stars">2</td>
+              <td class="hotel-type">
+                <span>Апартаменты</span>
+                <a class="hotel-type-button hotel-type-button-detail">Подробнее</a>
+              </td>
+              <td class="hotel-price">
+                <span>от 2000 р.</span>
+                <a class="hotel-type-button hotel-type-button-booking">Забронировать</a>
+              </td>
+              <td class="hotel-rating">
+                <span>9,2</span>
+              </td>
+              <td class="hotel-foto">
+                <img src="http://via.placeholder.com/150x100" alt="Villas at Poco Diablo" width="150" height="100" >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <footer class="main-footer">
+        <span class="footer-slogan">#VISITSEDONA</span>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button button-twitter" href="#">Twitter</a></li>
+            <li><a class="social-button button-facebook" href="#">Facebook</a></li>
+            <li><a class="social-button button-youtube" href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <span>website by:</span> 
+          <a href="http://htmlacademy.ru">
+            <img src="http://via.placeholder.com/40x20" alt="html-academy" width="80" height="30" >
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
