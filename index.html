@@ -25,25 +25,24 @@
       <ol class="reason-list">
         <li class="reason reason-city">
           <div class="reason-header">
-
             <h2>Настоящий городок</h2>
             <p>Седона - не атрацион для туристов, там течет своя жизнь</p>
           </div>
           <div class="reason-foto">
-              <img src="img/city.jpg" width="800" height="256" alt="Седона">
+            <img src="img/city.jpg" width="800" height="256" alt="Седона">
           </div>
           <ul class="reason-details">
             <li class="reason-detail">
-                <h3>Жилье</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <h3>Жилье</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="reason-detail">
-                <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="reason-detail">
-                <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
@@ -75,16 +74,24 @@
           </div>
         </li>
       </ol>
-      </section>
       <section class="interest">
         <h2>Заинтересовались?</h2>
         <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшее предложени гостиниц в Седоне</p>
         <div class="search-form">
-          <a href="#search-form" class="search-form-button">
-              Поиск гостиницы в Седоне
-          </a>
-          <form>
-
+          <a href="#search-form" class="search-form-button">Поиск гостиницы в Седоне</a>
+          <form class="search" id="search-form" method="POST" action="https://echo.htmlacademy.ru">
+            <!--TODO подумать на типом контрола ввода даты, валидатор ругается, придется делать на JS-->
+            <label for="search-date-from">Дата заезда:</label>
+            <input type="date" class="search-date" id="search-date-from" name="search-date-from">
+            <label for="search-date-to">Дата заезда:</label>
+            <input type="date" class="search-date" id="search-date-to" name="search-date-to">
+            <div class="search-persons-group">
+              <label for="search-adults">Взрослые:</label>
+              <input type="number" class="search-persons" id="search-adults" name="search-adults" value="2">
+              <label for="search-kids">Дети:</label>
+              <input type="number" class="search-persons" id="search-kids" name="search-kids" value="0">
+            </div>
+            <button class="search-button button" type="submit">Найти</button>
           </form>
         </div>
       </section>
@@ -92,9 +99,9 @@
         <span class="footer-slogan">#VISITSEDONA</span>
         <div class="footer-social">
           <ul>
-              <li><a class="social-button button-twitter" href="#">Twitter</a></li>
-              <li><a class="social-button button-facebook" href="#">Facebook</a></li>
-              <li><a class="social-button button-youtube" href="#">Youtube</a></li>
+            <li><a class="social-button button-twitter" href="#">Twitter</a></li>
+            <li><a class="social-button button-facebook" href="#">Facebook</a></li>
+            <li><a class="social-button button-youtube" href="#">Youtube</a></li>
           </ul>
         </div>
         <div class="footer-copyright">

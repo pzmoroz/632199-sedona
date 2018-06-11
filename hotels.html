@@ -22,7 +22,60 @@
       <h1 class="visually-hidden">Отели Седоны</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <form></form>
+        <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul class="filter-list">
+              <li class="filter-option">
+                <label for="filter-basin">Бассейн</label>
+                <input type="checkbox" id="filter-basin" name="filter-basin" class="filter-option-checkbox filter-option-checkbox-checked" checked>
+              </li>
+              <li class="filter-option">
+                <label for="filter-parking">Парковка</label>
+                <input type="checkbox" id="filter-parking" name="filter-parking" class="filter-option-checkbox">
+              </li>
+              <li class="filter-option">
+                <label for="filter-wifi">Wi-Fi</label>
+                <input type="checkbox" id="filter-wifi" name="filter-wifi" class="filter-option-checkbox">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul class="filter-list">
+              <li class="filter-option">
+                <label for="filter-hotel">Гостиница</label>
+                <input type="checkbox" id="filter-hotel" name="filter-hotel" class="filter-option-checkbox filter-option-checkbox-checked" checked>
+              </li>
+              <li class="filter-option">
+                <label for="filter-motel">Мотель</label>
+                <input type="checkbox" id="filter-motel" name="filter-motel" class="filter-option-checkbox filter-option-checkbox-checked" checked>
+              </li>
+              <li class="filter-option">
+                <label for="filter-appartment">Апартаменты</label>
+                <input type="checkbox" id="filter-appartment" name="filter-appartment" class="filter-option-checkbox filter-option-checkbox-checked" checked>
+              </li>
+            </ul>
+          </fieldset>
+          <label for="filter-price">Стоимость в сутки (р):</label>
+          <!-- TODO надо решить таблицей показывать или дивами-->
+          <table class="filter-price-legend">
+            <thead>
+              <tr>
+                <td>От</td>
+                <td>До</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="filter-price-from">0</td>
+                <td id="filter-price-to">3000</td>
+              </tr>
+            </tbody>
+          </table>
+          <input type="range" id="filter-price" name="filter-price" min="0" max="3000" step="1">
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка</h2>
@@ -124,7 +177,7 @@
         <div class="footer-copyright">
           <span>website by:</span>
           <a href="http://htmlacademy.ru">
-            <img src="img/logo-htmlacademy.svg" alt="html-academy" width="115" height="41" alt="htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy.ru">
           </a>
         </div>
       </footer>
