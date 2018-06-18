@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+
+  font-family: 'PTSans', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #333333;
+
+  background-color: #ffffff;
+
+
+
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover{
+  color: #81b3d2;
+}
+
+.button {
+  font: inherit;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.site-navigation {
+  font-weight: bold;
+  list-style: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h1{
+  font-size: 21px;
+  color: #000000;
+}
+
+.reason {
+  background-color: #81b3d2;
+}
+
+.reason-details{
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.reason-header h2 {
+  font-size: 21px;
+  color: #ffffff;
+  line-height: 21px;
+  background-color: #81b3d2;
+}
+
+.reason-detail h3 {
+  font-size: 21px;
+  color: #000000;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.reason-minor {
+  background-color: #f2f2f2;
+}
+
+.reason-header-minor h2 {
+  font-size: 21px;
+  color: #000000;
+  line-height: 21px;
+  background-color: #f2f2f2;
+}
