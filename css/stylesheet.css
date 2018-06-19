@@ -22,8 +22,8 @@ body {
 	clip: rect(1px, 1px, 1px, 1px);
 	padding:0 !important;
 	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
+	height: 1px !important;
+	width: 1px !important;
 	overflow: hidden;
 }
 
@@ -162,8 +162,12 @@ a:active {
   font-weight: bold;
 }
 
-.social-buttons {
+.footer-socials {
   list-style: none;
+}
+
+.footer-copyright {
+  color: #000000;
 }
 
 .filter {
@@ -214,11 +218,82 @@ a:active {
   color: #000000;
 }
 
-.sorting-type button {
+.sorting-type a{
   font-size: 12px;
   color: rgba(0, 0, 0, 0.3);
-  background-color: #ffffff;
-} 
-.sorting-type-selected {
+  background: #ffffff;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.sorting-type .selected {
   color: #81b3d2;
-} 
+  text-decoration: none;
+}
+.sorting-type a:hover{
+  color: #81b3d2;
+  background: #ffffff;
+}
+
+.sorting-direction .fa-sort-asc,
+.sorting-direction .fa-sort-desc{
+  font-size: 24px;
+}
+
+.sorting-direction .fa-sort-asc{
+  color: #81b3d2;
+}
+
+.hotel-name {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.hotel-type,
+.hotel-price {
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.hotel-rating {
+  font-size: 16px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.hotel-type-detail-button {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.hotel-type-detail-button:hover {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.hotel-type-detail-button:active {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.hotel-type-booking-button {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.hotel-type-booking-button:hover {
+  color: #ffffff;
+  background-color: #604e43;
+}
+
+.hotel-type-booking-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+

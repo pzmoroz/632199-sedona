@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
   </head>
   <body>
@@ -87,13 +88,13 @@
         </div>
         <div class="sorting-type">
           <span>Сортировка</span>
-          <button class="button sorting-type-price sorting-type-selected">по цене</button>
-          <button class="button sorting-type-type">по типу</button>
-          <button class="button sorting-type-rating">по рейтингу</button>
+          <a class="button selected" href="#">по цене</a>
+          <a class="button" href="#">по типу</a>
+          <a class="button" href="#">по рейтингу</a>
         </div >
         <div class="sorting-direction">
-          <button class="sorting-direction-ascending sorting-direction-selected"></button>
-          <button class="sorting-direction-descending"></button>
+          <a class="fa fa-sort-asc" ></a>
+          <a class="fa fa-sort-desc"></a>
         </div >
       </section>
       <section class="hotels">
@@ -115,11 +116,11 @@
               <td class="hotel-stars">4</td>
               <td class="hotel-type">
                 <span>Гостиница</span>
-                <a class="hotel-type-button hotel-type-button-detail">Подробнее</a>
+                <a class="button hotel-type-detail-button" href="#">Подробнее</a>
               </td>
               <td class="hotel-price">
                 <span>от 4000 р.</span>
-                <a class="hotel-type-button hotel-type-button-booking">Забронировать</a>
+                <a class="button hotel-type-booking-button" href="#">Забронировать</a>
               </td>
               <td class="hotel-rating">
                 <span>8,5</span>
@@ -133,11 +134,11 @@
               <td class="hotel-stars">3</td>
               <td class="hotel-type">
                 <span>Мотель</span>
-                <a class="hotel-type-button hotel-type-button-detail">Подробнее</a>
+                <a class="button hotel-type-detail-button" href="#">Подробнее</a>
               </td>
               <td class="hotel-price">
                 <span>от 3000 р.</span>
-                <a class="hotel-type-button hotel-type-button-booking">Забронировать</a>
+                <a class="button hotel-type-booking-button" href="#">Забронировать</a>
               </td>
               <td class="hotel-rating">
                 <span>8,9</span>
@@ -151,11 +152,11 @@
               <td class="hotel-stars">2</td>
               <td class="hotel-type">
                 <span>Апартаменты</span>
-                <a class="hotel-type-button hotel-type-button-detail">Подробнее</a>
+                <a class="button hotel-type-detail-button" href="#">Подробнее</a>
               </td>
               <td class="hotel-price">
                 <span>от 2000 р.</span>
-                <a class="hotel-type-button hotel-type-button-booking">Забронировать</a>
+                <a class="button hotel-type-booking-button" href="#">Забронировать</a>
               </td>
               <td class="hotel-rating">
                 <span>9,2</span>
@@ -169,13 +170,11 @@
       </section>
       <footer class="main-footer">
         <span class="footer-slogan">#VISITSEDONA</span>
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button button-twitter" href="#">Twitter</a></li>
-            <li><a class="social-button button-facebook" href="#">Facebook</a></li>
-            <li><a class="social-button button-youtube" href="#">Youtube</a></li>
-          </ul>
-        </div>
+        <ul class="footer-socials">
+          <li><a class="button button-twitter" href="#">Twitter</a></li>
+          <li><a class="button button-facebook" href="#">Facebook</a></li>
+          <li><a class="button button-youtube" href="#">Youtube</a></li>
+        </ul>
         <div class="footer-copyright">
           <span>website by:</span>
           <a href="http://htmlacademy.ru">
