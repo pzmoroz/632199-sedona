@@ -13,6 +13,7 @@ body {
   letter-spacing: normal;
   color: #333333;
 
+  background: #ffffff url('../img/intro.jpg') no-repeat;
   background-color: #ffffff;
 }
 
@@ -63,7 +64,7 @@ a:active {
 
 .main-navigation {
   display: flex;
-  min-height: 56px;
+  height: 56px;
 }
 
 .main-header-logo {
@@ -83,15 +84,55 @@ a:active {
 
 .container {
   text-align: center;
+  margin-top: 508px;
 }
 
-.container h1{
+.container-header {  
+  display: flex;
+  flex-direction: column;  
+  
+  margin-bottom: 50px;
+}
+
+.container-header h1{
   font-size: 21px;
   color: #000000;
+  width: 460px;
+  align-self: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
-.reason {
+.reason-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  
   background-color: #81b3d2;
+}
+
+.reason-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.reason-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+.reason-header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px; 
+}
+.reason-foto {
+  width: 800px;
 }
 
 .reason-details{
@@ -104,6 +145,10 @@ a:active {
   color: #ffffff;
   line-height: 21px;
   background-color: #81b3d2;
+}
+
+.reason-header p {
+  color: #ffffff;
 }
 
 .reason-detail h3 {
