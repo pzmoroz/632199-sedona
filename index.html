@@ -5,12 +5,11 @@
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
-    <link href="css/outline.css" rel="stylesheet">
+    <!-- <link href="css/outline.css" rel="stylesheet"> -->
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        
         <ul class="site-navigation">
           <li><a class="site-navigation-info" href="info.html">информация</a></li>
           <li><a class="site-navigation-media" href="media.html">фото и видео</a></li>
@@ -25,7 +24,6 @@
       </nav>
     </header>
     <main class="container">
-      <!-- <img class="container-intro" src="img/intro.jpg" width="1200" height="780" alt="Седона"> -->
       <div class="container-header">
         <h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
@@ -41,69 +39,78 @@
               <img src="img/city.jpg" width="800" height="256" alt="Седона">
             </div>
           </div>
-          
+
           <ul class="reason-details">
-            <li class="reason-detail">
+            <li class="reason-detail reason-detail-hotels">
               <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="reason-detail">
+            <li class="reason-detail reason-detail-food">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="reason-detail">
+            <li class="reason-detail reason-detail-things">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
         <li class="reason-item reason-sight">
-          <div class="reason-header">
-            <h2>Там есть мост дьявола</h2>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
-          <div class="reason-foto">
-            <img src="img/diablo.jpg" width="800" height="256" alt="Мост Дьявола">
-          </div>
-        </li>
-        <li class="reason reason-minor">
-          <div class="reason-header reason-header-minor">
-            <h2>Небольшая площадь</h2>
-            <p>Все достопримечательности находятся очень близко</p>
+          <div class="reason-wrapper">
+            <div class="reason-header">
+              <h2>Там есть мост дьявола</h2>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div class="reason-foto">
+              <img src="img/diablo.jpg" width="800" height="256" alt="Мост Дьявола">
+            </div>
           </div>
         </li>
-        <li class="reason reason-minor">
-          <div class="reason-header reason-header-minor">
-            <h2>Красивая дорога</h2>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-        </li>
-        <li class="reason reason-minor">
-          <div class="reason-header reason-header-minor">
-            <h2>Мало туристов</h2>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
+        <li class="reason-item">
+          <ul class="reason-minors">
+            <li class="reason-minor">
+              <h2>Небольшая площадь</h2>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="reason-minor">
+              <h2>Красивая дорога</h2>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="reason-minor">
+              <h2>Мало туристов</h2>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
         </li>
       </ol>
       <section class="interest">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшее предложени гостиниц в Седоне</p>
-        <div class="search-form">
-          <a href="#search-form" class="search-form-button">Поиск гостиницы в Седоне</a>
-          <form class="search" id="search-form" method="POST" action="https://echo.htmlacademy.ru">
-            <!--TODO подумать на типом контрола ввода даты, валидатор ругается, придется делать на JS-->
-            <label for="search-date-from">Дата заезда:</label>
-            <input type="date" class="search-date" id="search-date-from" name="search-date-from">
-            <label for="search-date-to">Дата заезда:</label>
-            <input type="date" class="search-date" id="search-date-to" name="search-date-to">
-            <div class="search-persons-group">
-              <label for="search-adults">Взрослые:</label>
-              <input type="number" class="search-persons" id="search-adults" name="search-adults" value="2">
-              <label for="search-kids">Дети:</label>
-              <input type="number" class="search-persons" id="search-kids" name="search-kids" value="0">
+        <div class="interest-wrapper">
+          <div class="interest-header">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшее предложени гостиниц в Седоне</p>
+          </div>
+          <div class="search-form">
+            <a href="#search-form" class="search-form-button">Поиск гостиницы в Седоне</a>
+            <div class="search-wrapper">
+              <form class="search" id="search-form" method="POST" action="https://echo.htmlacademy.ru">
+                <div class="search-input-line">
+                  <label for="search-date-from">Дата заезда:</label>
+                  <input type="text" class="search-date" id="search-date-from" name="search-date-from" value="24 апреля 2017">
+                </div>
+                <div class="search-input-line">
+                  <label for="search-date-to">Дата заезда:</label>
+                  <input type="text" class="search-date" id="search-date-to" name="search-date-to" value="4 июля 2017">
+                </div>
+                <div class="search-input-line">
+                  <label for="search-adults">Взрослые:</label>
+                  <input type="number" class="search-persons" id="search-adults" name="search-adults" value="2">
+                  <label for="search-kids">Дети:</label>
+                  <input type="number" class="search-persons" id="search-kids" name="search-kids" value="0">
+                </div>
+                <button class="search-button button" type="submit">Найти</button>
+              </form>
             </div>
-            <button class="search-button button" type="submit">Найти</button>
-          </form>
+          </div>
         </div>
       </section>
       <footer class="main-footer">

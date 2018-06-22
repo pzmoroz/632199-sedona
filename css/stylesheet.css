@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 1200px;
 
@@ -13,19 +13,38 @@ body {
   letter-spacing: normal;
   color: #333333;
 
-  background: #ffffff url('../img/intro.jpg') no-repeat;
-  background-color: #ffffff;
+  background: #ffffff url('../img/intro.jpg') no-repeat 50% 0%;
+  background-color: #f2f2f2;
+
+  box-shadow: 0 0 40px 0px gray;
 }
 
-.visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
+.hotels-body {
+  background: #ffffff url('../img/filter-background.jpg') no-repeat 50% -180%;
+  background-color: #f2f2f2;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -68,18 +87,28 @@ a:active {
 }
 
 .main-header-logo {
-  width: 156px;
-  height: 56px;
+  position: absolute;
+  width: 138px;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-navigation {
   font-weight: bold;
   list-style: none;
-  margin: 0px;
+  margin: 0px 70px;
   padding: 0px;
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.site-navigation li {
+  align-self: center;
 }
 
 .container {
@@ -87,10 +116,10 @@ a:active {
   margin-top: 508px;
 }
 
-.container-header {  
+.container-header {
   display: flex;
-  flex-direction: column;  
-  
+  flex-direction: column;
+
   margin-bottom: 50px;
 }
 
@@ -109,7 +138,7 @@ a:active {
   padding: 0;
   display: flex;
   flex-direction: column;
-  
+
   background-color: #81b3d2;
 }
 
@@ -121,23 +150,16 @@ a:active {
 .reason-wrapper{
   display: flex;
   flex-direction: row;
+  height: 256px;
 }
 
 .reason-header {
   display: flex;
   flex-direction: column;
   padding-top: 40px;
-  padding-bottom: 60px;
-  padding-left: 60px;
-  padding-right: 60px; 
-}
-.reason-foto {
-  width: 800px;
-}
 
-.reason-details{
-  list-style: none;
-  background-color: #ffffff;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .reason-header h2 {
@@ -151,38 +173,113 @@ a:active {
   color: #ffffff;
 }
 
+.reason-foto {
+  width: 800px;
+}
+
+.reason-details{
+  list-style: none;
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reason-detail {
+  max-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px 85px 60px;
+}
+
 .reason-detail h3 {
   font-size: 21px;
   color: #000000;
   line-height: 21px;
   background-color: #ffffff;
+  margin-top: 160px;
+}
+
+.reason-detail-hotels {
+  background: #ffffff url('../img/icon-1.svg') no-repeat 50% 20%;
+}
+
+.reason-detail-food {
+  background: #ffffff url('../img/icon-2.svg') no-repeat 50% 20%;
+}
+
+.reason-detail-things {
+  background: #ffffff url('../img/icon-3.svg') no-repeat 50% 20%;
+}
+
+.reason-minors {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  height: 256px;
+  justify-content: space-between;
 }
 
 .reason-minor {
+  flex-basis: 400px;
   background-color: #f2f2f2;
+  padding: 45px 70px 60px 70px;
 }
 
-.reason-header-minor h2 {
+.reason-minor h2 {
   font-size: 21px;
   color: #000000;
   line-height: 21px;
   background-color: #f2f2f2;
 }
 
-.interest {
-  background-color: #ffffff;
+.reason-minor p {
+  color: #333333;
 }
 
-.interest h2 {
+.interest {
+  background-color: #ffffff;
+  height: 885px;
+  background: #ffffff url('../img/map.jpg') no-repeat 0 292px;
+  width: 100%;
+}
+
+.interest-wrapper {
+  height: 292px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.interest-header {
+  margin: auto auto;
+  padding: 0 350px;
+}
+
+.interest-header h2 {
+  font-family: 'PTSans-Bold' sans-serif;
   font-size: 30px;
   color: #000000;
   line-height: 36px;
+  margin-top: 50px;
+}
+
+.search-form {
+  margin: 0 auto;
 }
 
 .search-form-button {
+  display: block;
+  width: 568px;
   font-size: 21px;
   color: #ffffff;
   background-color: #766357;
+  margin-top: auto;
+  padding: 30px 0;
 }
 .search-form-button:hover {
   background-color: #604e43;
@@ -193,11 +290,32 @@ a:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.search-wrapper {
+  position: absolute;
+  width: 568px;
+  min-height: 395px;
+  background-color: #ffffff;
+}
+
 .search label {
   font-size: 14px;
   color: #000000;
   font-weight: bold;
 }
+
+.search {
+  display: flex;
+  flex-direction: column;
+  padding: 55px;
+}
+
+.search-input-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
 
 .search input[type="text"],
 .search input[type="date"],
@@ -205,7 +323,24 @@ a:active {
   font-size: 14px;
   font-weight: bold;
   background-color: #f2f2f2;
+  border: none;
+  margin-top: -10px;
+  padding: 0;
+  height: 38px;
+  width: 335px;
+  align-self: center;
 }
+
+.search input[type="text"] {
+  padding-left: 10px;
+}
+
+
+.search input[type="number"] {
+  width: 115px;
+  text-align: center;
+}
+
 .search input[type="text"]:hover,
 .search input[type="date"]:hover,
 .search input[type="number"]:hover {
@@ -220,43 +355,92 @@ a:active {
 .search button {
   font-size: 21px;
   font-weight: bold;
+  display: block;
+  padding: 15px 0;
+  margin-top: 55px;
+
+}
+
+.main-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  top: -120px;
+  opacity: 0.9;
+  background-color: #ffffff;
+  height: 120px;
+}
+
+.main-footer-hotels {
+  opacity: 1;
+  top: 0;
 }
 
 .footer-slogan {
   font-size: 21px;
   font-weight: bold;
+  align-self: center;
 }
 
 .footer-socials {
   list-style: none;
+  align-self: center;
 }
 
 .footer-copyright {
+
+  align-self: center;
   color: #000000;
 }
+
+
+.hotels-container {
+  min-height: 218px;
+}
+
 
 .filter {
   font-size: 14px;
   color: #ffffff;
+  min-height: 218px;
+  padding: 0 70px;
+}
 
-  background-image: url("../img/filter-background.jpg");
-  background-repeat: no-repeat;
-  text-align: left;
+.filter-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 218px;
+}
+
+
+.filter-form-fieldset{
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
 }
 
 .filter-list {
+  flex-grow: 1;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.filter fieldset{
-  border: none;
-}
-
-.filter legend {
+.filter-form legend {
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
+  margin-top: 20px;
 }
+
+.range-wrapper {
+  margin-left: auto;
+}
+
 
 .filter label {
   font-size: 14px;
@@ -275,12 +459,24 @@ a:active {
 
 .sorting {
   font-size: 12px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 30px 70px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .sorting .sorting-founded {
   font-size: 21px;
   font-weight: bold;
   color: #000000;
+
+}
+
+.sorting-type {
+  position: inherit;
+  margin-left: 60px;
 }
 
 .sorting-type a{
@@ -300,6 +496,10 @@ a:active {
   background: #ffffff;
 }
 
+.sorting-direction {
+  margin-left:  auto;
+}
+
 .sorting-direction .fa-sort-asc,
 .sorting-direction .fa-sort-desc{
   font-size: 24px;
@@ -309,10 +509,35 @@ a:active {
   color: #81b3d2;
 }
 
+.hotels{
+  background: #ffffff;
+  padding: 0 70px;
+}
+
+.hotels tr{
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-foto {
+  float: left;
+  order: -1;
+}
+
+.hotel-stars {
+  min-width: 120px;
+}
+
 .hotel-name {
   font-size: 21px;
   font-weight: bold;
   color: #000000;
+  margin-left: 30px;
+  margin-right: auto;
+  min-width: 62%;
+  max-width: 72%;
 }
 
 .hotel-type,

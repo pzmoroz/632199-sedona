@@ -6,27 +6,30 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
+    <!-- <link href="css/outline.css" rel="stylesheet"> -->
   </head>
-  <body>
+  <body class="hotels-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.png" width="60" height="50" alt="Логотип сайта города Седона">
-        </a>
         <ul class="site-navigation">
-          <li><a href="info.html">информация</a></li>
-          <li><a href="media.html">фото и видео</a></li>
-          <li><a href="state-map.html">карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotels.html">гостиницы</a></li>
+          <li><a class="site-navigation-info" href="info.html">информация</a></li>
+          <li><a class="site-navigation-media" href="media.html">фото и видео</a></li>
+          <li>
+            <a class="main-header-logo">
+              <img src="img/logo.png" width="138" height="70" alt="Седона">
+            </a>
+          </li>
+          <li><a class="site-navigation-map" href="state-map.html">карта штата</a></li>
+          <li><a class="site-navigation-hotels" href="hotels.html">гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="hotels-container">
       <h1 class="visually-hidden">Отели Седоны</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
-          <fieldset>
+        <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
+          <div class="filter-form-fieldset">
             <legend>Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-option">
@@ -42,8 +45,8 @@
                 <input type="checkbox" id="filter-wifi" name="filter-wifi" class="filter-option-checkbox">
               </li>
             </ul>
-          </fieldset>
-          <fieldset>
+          </div>
+          <div class="filter-form-fieldset">
             <legend>Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-option">
@@ -59,25 +62,26 @@
                 <input type="checkbox" id="filter-appartment" name="filter-appartment" class="filter-option-checkbox filter-option-checkbox-checked" checked>
               </li>
             </ul>
-          </fieldset>
-          <label for="filter-price">Стоимость в сутки (р):</label>
-          <!-- TODO надо решить таблицей показывать или дивами-->
-          <table class="filter-price-legend">
-            <thead>
-              <tr>
-                <td>От</td>
-                <td>До</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td id="filter-price-from">0</td>
-                <td id="filter-price-to">3000</td>
-              </tr>
-            </tbody>
-          </table>
-          <input type="range" id="filter-price" name="filter-price" min="0" max="3000" step="1">
-          <button type="submit" class="filter-button button">Показать</button>
+          </div>
+          <div class="range-wrapper">
+            <label for="filter-price">Стоимость в сутки (р):</label>
+            <table class="filter-price-legend">
+              <thead>
+                <tr>
+                  <td>От</td>
+                  <td>До</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="filter-price-from">0</td>
+                  <td id="filter-price-to">3000</td>
+                </tr>
+              </tbody>
+            </table>
+            <input type="range" id="filter-price" name="filter-price" min="0" max="3000" step="1">
+            <button type="submit" class="filter-button button">Показать</button>
+          </div>
         </form>
       </section>
       <section class="sorting">
@@ -100,9 +104,9 @@
       <section class="hotels">
         <h2 class="visually-hidden">Список отелей</h2>
         <table>
-          <thead>
+          <thead class="visually-hidden">
             <tr>
-              <td>Наименовани</td>
+              <td class="hotel-name-header">Наименовани</td>
               <td>Количество звезд</td>
               <td>Тип</td>
               <td>Цена</td>
@@ -168,7 +172,7 @@
           </tbody>
         </table>
       </section>
-      <footer class="main-footer">
+      <footer class="main-footer main-footer-hotels">
         <span class="footer-slogan">#VISITSEDONA</span>
         <ul class="footer-socials">
           <li><a class="button button-twitter" href="#">Twitter</a></li>
