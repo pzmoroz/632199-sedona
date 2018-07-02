@@ -220,7 +220,7 @@ a:active {
   flex-direction: column;
   padding-top: 30px;
   padding-bottom: 50px;
-  
+
 
   position: relative;
 }
@@ -247,7 +247,7 @@ a:active {
   letter-spacing: 0.2px;
 
   background-color: #81b3d2;
-  margin-bottom: 52px; 
+  margin-bottom: 52px;
 }
 
 .reason-header p {
@@ -370,7 +370,7 @@ a:active {
 }
 
 .interest-wrapper {
-  height: 289px;
+  height: 291px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -387,12 +387,17 @@ a:active {
   font-size: 30px;
   color: #000000;
   line-height: 36px;
+  letter-spacing: 0.2px;
+
   margin-top: 50px;
+  margin-bottom: 24px;
+
 }
 
 .interest-header p {
   padding: 0 30px;
   line-height: 24px;
+  letter-spacing: 0px;
 }
 
 .search-form {
@@ -407,6 +412,7 @@ a:active {
   line-height: 26px;
   color: #ffffff;
   background-color: #766357;
+
   margin-top: auto;
   padding: 30px 0;
 }
@@ -458,32 +464,40 @@ a:active {
   font-weight: bold;
   background-color: #f2f2f2;
   border: none;
+  box-sizing: border-box;
 
   padding: 0;
   height: 38px;
-  width: 335px;
+  width: 345px;
   align-self: center;
+}
+
+.search-input-line {
+  position: relative;
 }
 
 .search-input-line-date {
   position: relative;
 }
 
-.search-input-line-date::after {
-  content: "";
-
+.search-input-line-calendar {
   position: absolute;
-  right: 8px;
-  top: 8px;
+  right: 9px;
+  top: 7px;
 
-  width: 21px;
-  height: 22px;
-  background: url('../img/calendar.svg') no-repeat;
   opacity: 0.4;
 }
 
+.search-input-line-date:hover .search-input-line-calendar {
+  opacity: 1;
+}
+
+.search-input-line-date:active .search-input-line-calendar path{
+  fill: #81b3d2;
+}
+
 .search-input-line-date input[type="text"] {
-  padding-left: 10px;
+  padding-left: 11px;
   text-transform: uppercase;
 }
 
@@ -495,6 +509,7 @@ a:active {
   justify-content: space-between;
   align-items: center;
   margin-top: -8px;
+  margin-left: -2px;
 }
 
 .search-input-line-persons:first-child .minus {
@@ -507,7 +522,7 @@ a:active {
 
 .search-input-line-persons-button {
   position: relative;
-  top: -7px;
+  top: -8px;
 
   margin: 0;
   padding: 0;
@@ -515,7 +530,7 @@ a:active {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
-  margin-top: -10px;
+  /* margin-top: -10px; */
   outline: none;
 }
 
@@ -590,9 +605,10 @@ a:active {
   background-color: #ebebeb;
 }
 
-.search-input-line-persons-button:focus,
 .search input[type="text"]:focus{
   background-color: #ffffff;
+  outline: none;
+  border: solid 2px #e5e5e5;
 }
 
 .search button {
@@ -607,15 +623,14 @@ a:active {
 
 .main-footer {
   position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+
   display: flex;
   justify-content: space-around;
-  
-  background-color: rgba(255, 255, 255, 0.9);
-  
   height: 120px;
   box-sizing: border-box;
-
 }
+
 
 .main-footer-hotels {
   top: 0;
@@ -627,6 +642,9 @@ a:active {
   font-weight: bold;
   align-self: center;
 
+  position: absolute;
+  left: 132px;
+  margin: 0 auto;
 }
 
 .footer-socials {
@@ -638,6 +656,9 @@ a:active {
   display: flex;
   justify-content: space-between;
   width: 150px;
+
+  position: absolute;
+  margin: 0 auto;
 
 }
 
@@ -669,6 +690,16 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: absolute;
+  right: 100px;
+  margin: 0 auto;
+}
+
+.footer-copyright a{
+  display: block;
+  margin-top: 6px;
+  margin-right: 1px;
 }
 
 .footer-copyright span {
