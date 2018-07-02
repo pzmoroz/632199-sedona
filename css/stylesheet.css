@@ -328,14 +328,20 @@ a:active {
   font-size: 21px;
   color: #000000;
   line-height: 21px;
+  letter-spacing: 0.2px;
   background-color: #f2f2f2;
-  margin-bottom: 65px;
+  margin-bottom: 66px;
 }
 
 
 
 .reason-minor p {
   color: #333333;
+  letter-spacing: 0.1px;
+}
+
+.reason-minor:last-child p{
+  padding: 0px 15px;
 }
 
 .reason-minor::before {
@@ -349,13 +355,22 @@ a:active {
 
 .interest {
   background-color: #ffffff;
-  height: 765px;
-  background: #ffffff url('../img/map.jpg') no-repeat 0 292px;
+  height: 763px;
+  /* background: #ffffff url('../img/map.jpg') no-repeat 0 292px; */
   width: 100%;
+  position: relative;
+}
+
+.interest .town-map {
+  position: absolute;
+  height: 593px;
+  width: 100%;
+  top: 291px;
+  background: #ffffff url('../img/map.jpg') no-repeat;
 }
 
 .interest-wrapper {
-  height: 292px;
+  height: 289px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -376,7 +391,8 @@ a:active {
 }
 
 .interest-header p {
-  padding: 0 50px;
+  padding: 0 30px;
+  line-height: 24px;
 }
 
 .search-form {
@@ -408,6 +424,7 @@ a:active {
   width: 568px;
   min-height: 395px;
   background-color: #ffffff;
+  box-shadow: 0 0 30px -10px gray;
 }
 
 .search label {
@@ -592,16 +609,15 @@ a:active {
   position: relative;
   display: flex;
   justify-content: space-around;
-
-  opacity: 0.9;
-  background-color: #ffffff;
+  
+  background-color: rgba(255, 255, 255, 0.9);
+  
   height: 120px;
   box-sizing: border-box;
 
 }
 
 .main-footer-hotels {
-  opacity: 1;
   top: 0;
 }
 
