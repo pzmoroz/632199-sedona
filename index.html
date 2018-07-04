@@ -84,7 +84,10 @@
         </li>
       </ol>
       <section class="interest">
-        <div class="town-map"></div>
+        <div class="town-map">
+          <img src="img/map.jpg" height="593px" width="100%">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1183705.35698225!2d-112.1075079344436!3d34.96776008368084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1530729968432" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
         <div class="interest-wrapper">
           <div class="interest-header">
             <h2>Заинтересовались?</h2>
@@ -156,64 +159,6 @@
         </div>
       </footer>
     </main>
-    <script>
-        var btn = document.querySelector(".search-form-button");
-        var popup = document.querySelector(".search-modal");
-        var form = popup.querySelector("form");
-
-        var searchFrom = document.querySelector("[name=search-date-from]");
-        var searchTo = document.querySelector("[name=search-date-from]");
-        var searchAdults = document.querySelector("[name=search-adults]");
-        var searchKids = document.querySelector("[name=search-adults]");
-
-        var isStorageSupport = true;
-        var storedSearchFrom = "";
-        var storedSearchTo = "";
-        var storedSearchAdults = "";
-        var storedSearchKids = "";
-        
-        try {
-          storedSearchFrom = localStorage.getItem("searchFrom");
-          storedSearchTo = localStorage.getItem("searchTo");
-          storedSearchAdults = localStorage.getItem("searchAdults");
-          storedSearchKids = localStorage.getItem("searchKids");
-        } catch (err) {
-          isStorageSupport = false;
-        }
-
-        btn.addEventListener("click", function (evt) {
-          evt.preventDefault();
-
-          var isVisible = popup.classList.contains("search-modal-show");
-          if(isVisible) {
-            popup.classList.remove("search-modal-show");
-            popup.classList.add("search-modal-close");
-            
-            
-          }
-          else {
-            popup.classList.remove("search-modal-close");
-            popup.classList.add("search-modal-show");
-            
-          }
-          
-          
-        });
-
-        form.addEventListener("submit", function (evt) {
-          if (!searchFrom.value || !searchTo.value || !searchAdults.value || !searchKids.value) {
-            evt.preventDefault();
-            console.log("Нужно ввести данные");
-          }
-          else {
-            if(isStorageSupport) {
-              localStorage.setItem("searchFrom", searchFrom.value);
-              localStorage.setItem("searchTo", searchTo.value);
-              localStorage.setItem("searchAdults", searchAdults.value);
-              localStorage.setItem("searchKids", searchKids.value);
-            } 
-          }
-        });
-    </script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
