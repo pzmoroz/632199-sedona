@@ -93,11 +93,11 @@
 
           <div class="search-form">
             <a href="#search-form" class="search-form-button">Поиск гостиницы в Седоне</a>
-            <div class="search-wrapper">
+            <div class="search-modal">
               <form class="search" id="search-form" method="POST" action="https://echo.htmlacademy.ru">
                 <div class="search-input-line search-input-line-date">
                   <label for="search-date-from">Дата заезда:</label>
-                  <input type="text" class="search-date" id="search-date-from" name="search-date-from" value="24 апреля 2017">
+                  <input type="text" class="search-date search-date-from" id="search-date-from" name="search-date-from" value="24 апреля 2017">
                   <a class="search-input-line-calendar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                       <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
@@ -157,7 +157,63 @@
       </footer>
     </main>
     <script>
-        var form = document.querySelector(".");
+        var btn = document.querySelector(".search-form-button");
+        var popup = document.querySelector(".search-modal");
+        var form = popup.querySelector("form");
+
+        var searchFrom = document.querySelector("[name=search-date-from]");
+        var searchTo = document.querySelector("[name=search-date-from]");
+        var searchAdults = document.querySelector("[name=search-adults]");
+        var searchKids = document.querySelector("[name=search-adults]");
+
+        var isStorageSupport = true;
+        var storedSearchFrom = "";
+        var storedSearchTo = "";
+        var storedSearchAdults = "";
+        var storedSearchKids = "";
+        
+        try {
+          storedSearchFrom = localStorage.getItem("searchFrom");
+          storedSearchTo = localStorage.getItem("searchTo");
+          storedSearchAdults = localStorage.getItem("searchAdults");
+          storedSearchKids = localStorage.getItem("searchKids");
+        } catch (err) {
+          isStorageSupport = false;
+        }
+
+        btn.addEventListener("click", function (evt) {
+          evt.preventDefault();
+
+          var isVisible = popup.classList.contains("search-modal-show");
+          if(isVisible) {
+            popup.classList.remove("search-modal-show");
+            popup.classList.add("search-modal-close");
+            
+            
+          }
+          else {
+            popup.classList.remove("search-modal-close");
+            popup.classList.add("search-modal-show");
+            
+          }
+          
+          
+        });
+
+        form.addEventListener("submit", function (evt) {
+          if (!searchFrom.value || !searchTo.value || !searchAdults.value || !searchKids.value) {
+            evt.preventDefault();
+            console.log("Нужно ввести данные");
+          }
+          else {
+            if(isStorageSupport) {
+              localStorage.setItem("searchFrom", searchFrom.value);
+              localStorage.setItem("searchTo", searchTo.value);
+              localStorage.setItem("searchAdults", searchAdults.value);
+              localStorage.setItem("searchKids", searchKids.value);
+            } 
+          }
+        });
     </script>
   </body>
 </html>

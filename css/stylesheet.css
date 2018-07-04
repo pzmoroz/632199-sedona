@@ -425,12 +425,53 @@ a:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.search-wrapper {
+@keyframes bounce-in {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce-out {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(2000px);
+    display: none;
+  }
+}
+
+.search-modal {
   position: absolute;
+  display: none;
   width: 568px;
   min-height: 395px;
   background-color: #ffffff;
   box-shadow: 0 0 30px -10px gray;
+  animation: bounce-out 0.6s;
+}
+
+.search-modal-show {
+  display: block;
+  animation: bounce-in 0.6s;
+}
+
+.search-modal-close {
+  display: block;
+  animation: bounce-out 0.6s;
 }
 
 .search label {
