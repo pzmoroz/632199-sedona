@@ -381,6 +381,10 @@ a:active {
   display: none;
 }
 
+.town-map iframe {
+  frameborder: 0;
+}
+
 .interest-wrapper {
   height: 291px;
   display: flex;
