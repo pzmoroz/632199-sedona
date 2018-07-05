@@ -13,7 +13,6 @@ body {
   letter-spacing: normal;
   color: #333333;
 
-  background: #ffffff url('../img/intro.jpg') no-repeat 50% 0%;
   background-color: #f2f2f2;
 
   box-shadow: 0 0 35px -10px gray;
@@ -23,6 +22,22 @@ body {
 
 .hotels-body {
   background-color: #f2f2f2;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1200px;
+  height: 780px;
+  background: #ffffff url('../img/intro.jpg') no-repeat 0% 0%;
+  background-color: #ffffff;
+  z-index: -1;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -488,7 +503,7 @@ a:active {
 .search-modal-close {
   display: block;
   animation-direction: reverse;
-  animation: bounce-out 1s;  
+  animation: bounce-out 1s;
   animation-fill-mode: forwards;
 }
 
