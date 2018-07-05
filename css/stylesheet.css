@@ -692,6 +692,7 @@ a:active {
   justify-content: space-around;
   height: 120px;
   box-sizing: border-box;
+  z-index: 3;
 }
 
 
