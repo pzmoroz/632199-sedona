@@ -3,9 +3,9 @@ var popup = document.querySelector(".search-modal");
 var form = popup.querySelector("form");
 
 var searchFrom = document.querySelector("[name=search-date-from]");
-var searchTo = document.querySelector("[name=search-date-from]");
+var searchTo = document.querySelector("[name=search-date-to]");
 var searchAdults = document.querySelector("[name=search-adults]");
-var searchKids = document.querySelector("[name=search-adults]");
+var searchKids = document.querySelector("[name=search-kids]");
 
 var isStorageSupport = true;
 var storedSearchFrom = "";

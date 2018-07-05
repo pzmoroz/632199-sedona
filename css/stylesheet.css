@@ -22,7 +22,6 @@ body {
 }
 
 .hotels-body {
-  /* background: #ffffff url('../img/filter-background.jpg') no-repeat 50% -180%; */
   background-color: #f2f2f2;
 }
 
@@ -81,14 +80,10 @@ a:active {
 .main-header {
   background-color: #ffffff;
   width: 100%;
-  /* padding: 0 71px; */
 }
 
 .main-navigation {
   display: flex;
-  /* padding: 15px 70px; */
-  /* padding-top: 15px;
-  padding-bottom: 15px; */
 }
 
 .main-header-logo {
@@ -204,6 +199,7 @@ a:active {
 .reason-item {
   display: flex;
   flex-direction: column;
+  z-index: 3;
 }
 
 .reason-wrapper{
@@ -363,6 +359,7 @@ a:active {
 .town-map {
   position: absolute;
   top: 291px;
+  z-index: 1;
 }
 
 .town-map img {
@@ -380,6 +377,8 @@ a:active {
   margin: auto auto;
   padding: 0 350px;
   flex-grow: 1;
+  z-index: 3;
+  background: #ffffff;
 }
 
 .interest-header h2 {
@@ -415,6 +414,7 @@ a:active {
 
   margin-top: auto;
   padding: 30px 0;
+  z-index: 3;
 }
 .search-form-button:hover {
   background-color: #604e43;
@@ -427,39 +427,24 @@ a:active {
 
 @keyframes bounce-in {
   0% {
-    transform: translateX(-2000px);
-  }
-
-  70% {
-    transform: translateX(30px);
-  }
-
-  90% {
-    transform: translateX(-10px);
+    transform: translateY(-568px);
+    z-index: -1;
   }
 
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
+    z-index: 2;
   }
 }
 
 @keyframes bounce-out {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
-
-  10% {
-    transform: translateX(10px);
-  }
-
-  30% {
-    transform: translateX(-30px);
-  }
-
 
   100% {
-    transform: translateX(2000px);
-    display: none;
+    transform: translateY(-568px);
+    z-index: -1;
   }
 }
 
@@ -492,6 +477,7 @@ a:active {
   min-height: 395px;
   background-color: #ffffff;
   box-shadow: 0 0 30px -10px gray;
+  z-index: 2;
 }
 
 .search-modal-show {
@@ -501,7 +487,8 @@ a:active {
 
 .search-modal-close {
   display: block;
-  animation: bounce-out 1s;
+  animation-direction: reverse;
+  animation: bounce-out 1s;  
   animation-fill-mode: forwards;
 }
 
