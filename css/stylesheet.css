@@ -864,7 +864,7 @@ a:active {
 }
 
 .filter-option-checkbox:focus+label {
-  border: 1px dashed #ffffff;
+  outline: 1px dashed #ffffff;
 }
 
 .filter-option-checkbox + label::before {
@@ -1286,5 +1286,5 @@ a:active {
 .social-button:focus,
 .filter-button:focus,
 .sorting-direction-button:focus svg{
-  border: 1px dashed #81b3d2;
+  outline: 1px dashed #81b3d2;
 }
