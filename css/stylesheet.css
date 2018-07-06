@@ -382,7 +382,8 @@ a:active {
 }
 
 .town-map iframe {
-  frameborder: 0;
+  display: block;
+  border: 0;
 }
 
 .interest-wrapper {
@@ -401,8 +402,9 @@ a:active {
 }
 
 .interest-header h2 {
-  font-family: 'PTSans-Bold' sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 30px;
+  font-weight: 700;
   color: #000000;
   line-height: 36px;
   letter-spacing: 0.2px;
@@ -858,6 +860,11 @@ a:active {
 
   cursor: pointer;
   user-select: none;
+
+}
+
+.filter-option-checkbox:focus+label {
+  border: 1px dashed #ffffff;
 }
 
 .filter-option-checkbox + label::before {
@@ -1273,3 +1280,11 @@ a:active {
   background-color: #503e33;
 }
 
+.button:focus,
+.search-form-button:focus,
+.search-input-line-persons-button:focus,
+.social-button:focus,
+.filter-button:focus,
+.sorting-direction-button:focus svg{
+  border: 1px dashed #81b3d2;
+}
