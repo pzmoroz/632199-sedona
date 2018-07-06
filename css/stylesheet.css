@@ -13,7 +13,6 @@ body {
   letter-spacing: normal;
   color: #333333;
 
-  background: #ffffff url('../img/intro.jpg') no-repeat 50% 0%;
   background-color: #f2f2f2;
 
   box-shadow: 0 0 35px -10px gray;
@@ -23,6 +22,22 @@ body {
 
 .hotels-body {
   background-color: #f2f2f2;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1200px;
+  height: 780px;
+  background: #ffffff url('../img/intro.jpg') no-repeat 0% 0%;
+  background-color: #ffffff;
+  z-index: -1;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -366,6 +381,11 @@ a:active {
   display: none;
 }
 
+.town-map iframe {
+  display: block;
+  border: 0;
+}
+
 .interest-wrapper {
   height: 291px;
   display: flex;
@@ -382,8 +402,9 @@ a:active {
 }
 
 .interest-header h2 {
-  font-family: 'PTSans-Bold' sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 30px;
+  font-weight: 700;
   color: #000000;
   line-height: 36px;
   letter-spacing: 0.2px;
@@ -488,7 +509,7 @@ a:active {
 .search-modal-close {
   display: block;
   animation-direction: reverse;
-  animation: bounce-out 1s;  
+  animation: bounce-out 1s;
   animation-fill-mode: forwards;
 }
 
@@ -839,6 +860,11 @@ a:active {
 
   cursor: pointer;
   user-select: none;
+
+}
+
+.filter-option-checkbox:focus+label {
+  outline: 1px dashed #ffffff;
 }
 
 .filter-option-checkbox + label::before {
@@ -1254,3 +1280,11 @@ a:active {
   background-color: #503e33;
 }
 
+.button:focus,
+.search-form-button:focus,
+.search-input-line-persons-button:focus,
+.social-button:focus,
+.filter-button:focus,
+.sorting-direction-button:focus svg{
+  outline: 1px dashed #81b3d2;
+}
