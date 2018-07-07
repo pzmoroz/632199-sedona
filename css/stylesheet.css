@@ -94,17 +94,13 @@ a:active {
 
 .main-header {
   background-color: #ffffff;
-  width: 100%;
-}
-
-.main-navigation {
-  display: flex;
+  width: 1200px;
 }
 
 .main-header-logo {
   position: absolute;
   width: 138px;
-  height: 70px;
+  min-height: 70px;
   top: 0;
   left: 0;
   right: 0;
@@ -119,6 +115,7 @@ a:active {
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: flex-start;
 
@@ -291,14 +288,15 @@ a:active {
   padding: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  height: 330px;
+  flex-wrap: wrap;
+  min-height: 330px;
 }
 
 .reason-detail {
   width: 400px;
 
   padding: 0 55px;
+  box-sizing: border-box;
 }
 
 .reason-detail h3 {
@@ -328,15 +326,16 @@ a:active {
   margin: 0px;
 
   display: flex;
-  height: 256px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 256px;
+  background-color: #f2f2f2;
 }
 
 .reason-minor {
   flex-basis: 400px;
-  background-color: #f2f2f2;
   padding: 30px 60px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .reason-minor h2 {
@@ -372,7 +371,7 @@ a:active {
 
 .interest {
   background-color: #ffffff;
-  height: 763px;
+  min-height: 763px;
   width: 100%;
   position: relative;
 }
@@ -393,7 +392,7 @@ a:active {
 }
 
 .interest-wrapper {
-  height: 291px;
+  min-height: 291px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -405,6 +404,7 @@ a:active {
   flex-grow: 1;
   z-index: 3;
   background: #ffffff;
+  position: relative;
 }
 
 .interest-header h2 {
@@ -429,6 +429,7 @@ a:active {
 .search-form {
   margin: 0 auto;
   align-self: center;
+  /* min-height: 473px; */
 }
 
 .search-form-button {
