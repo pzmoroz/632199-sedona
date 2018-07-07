@@ -171,9 +171,15 @@ a:active {
 
 
 .container {
+  display: block;
   text-align: center;
   margin-top: 511px;
 }
+
+.hotels-container {
+  display: block;
+}
+
 
 .container-header {
   display: flex;
@@ -422,6 +428,7 @@ a:active {
 
 .search-form {
   margin: 0 auto;
+  align-self: center;
 }
 
 .search-form-button {
@@ -711,6 +718,9 @@ a:active {
 
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 36px 0;
+
   height: 120px;
   box-sizing: border-box;
   z-index: 3;
@@ -727,7 +737,7 @@ a:active {
   font-weight: bold;
   align-self: center;
 
-  position: absolute;
+
   left: 132px;
   margin: 0 auto;
 }
@@ -742,7 +752,6 @@ a:active {
   justify-content: space-between;
   width: 150px;
 
-  position: absolute;
   margin: 0 auto;
 
 }
@@ -776,7 +785,6 @@ a:active {
   justify-content: center;
   align-items: center;
 
-  position: absolute;
   right: 100px;
   margin: 0 auto;
 }
@@ -994,7 +1002,9 @@ a:active {
 }
 
 .range-toggle:hover {
-  border: 9px solid #ffffff;
+  box-shadow:
+    0 0 0 1px #ffffff,
+    0 2px 1px 5px rgba(0, 1, 1, 0.2);
 }
 
 .range-toggle-min {
@@ -1131,6 +1141,10 @@ a:active {
   margin: 0;
 }
 
+.hotels td {
+  display: block;
+}
+
 .hotel-foto {
   order: 1;
   height: 26px;
@@ -1143,6 +1157,7 @@ a:active {
 
 
 .hotel-name {
+  order: 2;
   font-size: 22px;
   font-weight: 700;
   color: #000000;
@@ -1153,10 +1168,6 @@ a:active {
 
   min-width: 62%;
   max-width: 72%;
-
-
-
-  order: 2;
 }
 
 .hotel-stars {
@@ -1197,9 +1208,9 @@ a:active {
 }
 
 .hotel-type {
+  order: 4;
   margin-left: 165px;
   margin-bottom: 10px;
-  order: 4;
   position: relative;
   width: 115px;
   margin-right: -2px;
@@ -1208,9 +1219,8 @@ a:active {
 
 
 .hotel-price {
-  order: 5;
   position: relative;
-
+  order: 5;
 }
 
 .hotel-type a,
@@ -1224,9 +1234,10 @@ a:active {
 }
 
 .hotel-rating {
+  order: 6;
   position: relative;
   top: 36px;
-  order: 6;
+
   margin-left: auto;
 
   padding: 3px 12px 3px 15px;
