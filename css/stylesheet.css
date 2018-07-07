@@ -1146,7 +1146,7 @@ a:active {
 }
 
 .hotel-foto {
-  order: 1;
+  order: -1;
   height: 26px;
   width: 135px;
   overflow: visible;
@@ -1157,7 +1157,6 @@ a:active {
 
 
 .hotel-name {
-  order: 2;
   font-size: 22px;
   font-weight: 700;
   color: #000000;
@@ -1174,8 +1173,6 @@ a:active {
   max-width: 120px;
   margin-left: 50px;
   font-size: 0;
-
-  order: 3;
 }
 
 .stars {
@@ -1208,7 +1205,6 @@ a:active {
 }
 
 .hotel-type {
-  order: 4;
   margin-left: 165px;
   margin-bottom: 10px;
   position: relative;
@@ -1220,7 +1216,6 @@ a:active {
 
 .hotel-price {
   position: relative;
-  order: 5;
 }
 
 .hotel-type a,
@@ -1234,7 +1229,6 @@ a:active {
 }
 
 .hotel-rating {
-  order: 6;
   position: relative;
   top: 36px;
 
