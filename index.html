@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/stylesheet.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -81,17 +81,19 @@
         </li>
       </ol>
       <section class="interest">
-        <div class="town-map">
-          <img src="img/map.jpg" width="1200" height="592"  alt="карта окрестностей">
-          <iframe width="1200" height="592" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1183705.35698225!2d-112.1075079344436!3d34.96776008368084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1530729968432" style="border:0" allowfullscreen></iframe>
-        </div>
         <div class="interest-wrapper">
           <div class="interest-header">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
           <div class="search-form">
-            <a href="#search-form" class="search-form-button">Поиск гостиницы в Седоне</a>
+            <div class="search-form-wrapper">
+                <a href="#search-form" class="search-form-button">Поиск гостиницы в Седоне</a>
+            </div>
+            <div class="town-map">
+              <img src="img/map.jpg" width="1200" height="592"  alt="карта окрестностей">
+              <iframe width="1200" height="592" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1183705.35698225!2d-112.1075079344436!3d34.96776008368084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1530729968432" style="border:0" allowfullscreen></iframe>
+            </div>
             <div class="search-modal">
               <form class="search" id="search-form" method="POST" action="https://echo.htmlacademy.ru">
                 <div class="search-input-line search-input-line-date">
@@ -155,6 +157,6 @@
         </a>
       </div>
     </footer>
-    <script src="js/popup.js"></script>
+    <script src="js/popup.min.js"></script>
   </body>
 </html>
