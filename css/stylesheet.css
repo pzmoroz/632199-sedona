@@ -20,26 +20,6 @@ body {
   counter-reset: resons;
 }
 
-.hotels-body {
-  background-color: #f2f2f2;
-}
-
-main::before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 1200px;
-  height: 780px;
-  background: #ffffff url('../img/intro.jpg') no-repeat 0% 0%;
-  background-color: #ffffff;
-  z-index: -1;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
@@ -170,6 +150,21 @@ a:active {
   text-align: center;
   margin-top: 511px;
   background-color: #ffffff;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1200px;
+  height: 780px;
+  background: #ffffff url('../img/intro.jpg') no-repeat 0% 0%;
+  z-index: -1;
 }
 
 .hotels-container {
@@ -827,7 +822,7 @@ a:active {
   min-height: 218px;
   padding: 0 70px;
 
-  background: #ffffff url('../img/filter-background.jpg') no-repeat 50% 50%;
+  background: #647483 url('../img/filter-background.jpg') no-repeat 50% 50%;
   overflow: hidden;
 }
 
@@ -901,10 +896,13 @@ a:active {
 }
 
 .filter-option-checkbox:checked + label::before {
-
   background-image: url('../img/checkbox-on.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-option-checkbox:disabled + label::before {
+  opacity: 0.4;
 }
 
 .filter-range {
@@ -1162,6 +1160,13 @@ a:active {
   display: block;
 }
 
+.hotels a {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  padding: 3px 16px;
+}
+
 .hotel-foto {
   order: -1;
   height: 26px;
@@ -1174,18 +1179,28 @@ a:active {
 
 
 .hotel-name {
+  min-width: 62%;
+  max-width: 72%;
+  margin: -6px auto 4px 30px;
+}
+
+.hotel-name a {  
   font-size: 22px;
   font-weight: 700;
   color: #000000;
   letter-spacing: -0.4px;
   line-height: 27px;
 
-  margin: -6px auto 4px 30px;
-
-  min-width: 62%;
-  max-width: 72%;
+  padding: 0;
 }
 
+.hotel-name a:hover {
+  color: #81b3d2;
+}
+
+.hotel-name a:active {
+  color: rgba(0, 0, 0, 0.3);;
+}
 .hotel-stars {
   max-width: 120px;
   margin-left: 50px;
@@ -1212,13 +1227,6 @@ a:active {
   font-size: 14px;
   font-weight: normal;
   color: #333333;
-}
-
-.hotels a {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: bold;
-  padding: 3px 16px;
 }
 
 .hotel-type {
