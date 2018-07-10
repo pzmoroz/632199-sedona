@@ -64,9 +64,11 @@ a:active {
   background-color: #81b3d2;
   border: none;
 }
+
 .button:hover {
   background-color: #669ec0;
 }
+
 .button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
@@ -137,10 +139,10 @@ a:active {
 .site-navigation-right {
   text-align: center;
 }
+
 .site-navigation-right a {
   margin-left: 10px;
 }
-
 
 .container {
   display: block;
@@ -447,10 +449,12 @@ a:active {
   padding: 30px 0;
   z-index: 3;
 }
+
 .search-form-button:hover {
   background-color: #604e43;
   color: #ffffff;
 }
+
 .search-form-button:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
@@ -1104,6 +1108,7 @@ a:active {
   color: #81b3d2;
   text-decoration: none;
 }
+
 .sorting-type a:hover {
   color: #81b3d2;
   background: #ffffff;
@@ -1205,6 +1210,7 @@ a:active {
 .hotel-name a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
 .hotel-stars {
   max-width: 120px;
   margin-left: 50px;
@@ -1219,12 +1225,21 @@ a:active {
   background-repeat: space;
 }
 
-.stars-2 { width: 39px; }
-.stars-3 { width: 63px; }
-.stars-4 { width: 87px; }
-.stars-5 { width: 111px; }
+.stars-2 {
+  width: 39px;
+}
 
+.stars-3 {
+  width: 63px;
+}
 
+.stars-4 {
+  width: 87px;
+}
+
+.stars-5 {
+  width: 111px;
+}
 
 .hotel-type,
 .hotel-price {
