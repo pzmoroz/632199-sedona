@@ -796,7 +796,7 @@ a:active {
   text-align: center;
 }
 
-.footer-copyright a{
+.footer-copyright a {
   display: block;
   margin-top: 6px;
   margin-right: 1px;
@@ -1203,7 +1203,7 @@ a:active {
 }
 
 .hotel-name a:active {
-  color: rgba(0, 0, 0, 0.3);;
+  color: rgba(0, 0, 0, 0.3);
 }
 .hotel-stars {
   max-width: 120px;
