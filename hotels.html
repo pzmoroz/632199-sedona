@@ -63,8 +63,8 @@
           <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
             <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              <label class="min-price">от <input type="text" name="min-price" placeholder="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" placeholder="3000"></label>
             </div>
             <div class="range-controls">
               <div class="scale">
@@ -91,9 +91,11 @@
         </div >
         <div class="sorting-direction">
           <a class="sorting-direction-button" href="#">
+            <span class="visually-hidden">сортировка по возрастанию</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
           </a>
           <a class="sorting-direction-button sorting-direction-button-selected" href="#">
+            <span class="visually-hidden">сортировка по убыванию</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
           </a>
         </div >
@@ -154,7 +156,7 @@
             </tr>
             <tr>
               <td class="hotel-name">
-                <a href="#">Villas at Poco Diablo</a>  
+                <a href="#">Villas at Poco Diablo</a>
               </td>
               <td class="hotel-stars stars stars-2">2</td>
               <td class="hotel-type">

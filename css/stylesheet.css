@@ -109,16 +109,8 @@ a:active {
   box-sizing: border-box;
 }
 
-.site-navigation li:nth-child(2) {
-  margin-right: auto;
-
-  letter-spacing: 0.2px;
-  margin-left: 1px;
-}
-
-.site-navigation li:nth-child(3) {
-  letter-spacing: 0.5px;
-  margin-right: 2px;
+.site-navigation li:nth-child(4n + 3) {
+  margin-left: 244px;
 }
 
 .site-navigation a {
@@ -129,8 +121,13 @@ a:active {
   margin: 0 auto;
 }
 
+.site-navigation li:nth-child(3) a {
+  letter-spacing: 0.4px;
+}
+
 .site-navigation-active a {
   color: #766357;
+
 }
 
 .site-navigation-left {
@@ -217,7 +214,9 @@ a:active {
 .reason-wrapper {
   display: flex;
   flex-direction: row;
-  height: 256px;
+  min-height: 256px;
+  padding: 0;
+  margin: 0;
 }
 
 .reason-header {
@@ -227,15 +226,10 @@ a:active {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  padding-bottom: 50px;
-
 
 
   position: relative;
-}
-
-.reason-header h2 {
-  padding: 0px 100px;
+  border: 1px solid red;
 }
 
 .reason-header::before {
@@ -261,13 +255,14 @@ a:active {
 
   background-color: #81b3d2;
   margin-bottom: 52px;
+  padding: 0px 100px;
 }
 
 .reason-header p {
+  display: block;
   color: #ffffff;
   text-align: justify;
   text-align-last: center;
-
   padding: 0 60px;
 }
 
@@ -275,8 +270,13 @@ a:active {
   padding: 0 48px;
 }
 
-.reason-foto .img {
-  width: 800px;
+.reason-foto {
+  min-height: 256px;
+  margin: 0;
+  padding: 0;
+}
+
+.reason-foto-img {
   height: 256px;
 }
 
@@ -382,11 +382,11 @@ a:active {
 }
 
 .town-map img {
-  display: none;
+  display: block;
 }
 
 .town-map iframe {
-  display: block;
+  display: none;
   border: 0;
 }
 
@@ -588,6 +588,10 @@ a:active {
   opacity: 0.4;
 }
 
+.search-input-line-date input[type='text']::placeholder {
+  color: #000000;
+}
+
 .search-input-line-date:hover .search-input-line-calendar {
   opacity: 1;
 }
@@ -708,7 +712,7 @@ a:active {
 .search input[type='text']:focus {
   background-color: #ffffff;
   outline: none;
-  border: solid 2px #e5e5e5;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
 .search button {
@@ -829,8 +833,6 @@ a:active {
 .filter-form {
   display: flex;
   flex-direction: row;
-
-  max-height: 218px;
   padding-top: 27px;
 }
 
@@ -841,6 +843,7 @@ a:active {
   border: none;
 
   margin-right: 115px;
+  margin-bottom: 20px;
 }
 
 .filter ul {
@@ -909,7 +912,7 @@ a:active {
   width: 318px;
   margin-left: auto;
   margin-right: 2px;
-  align-self: center;
+
 }
 
 .filter-range-title {
@@ -976,6 +979,10 @@ a:active {
 
   background: none;
   border: none;
+}
+
+.price-controls input::placeholder {
+  color: #ffffff;
 }
 
 .range-controls {
@@ -1150,7 +1157,7 @@ a:active {
 
   border-bottom: 1px solid #e5e5e5;
   align-content: flex-start;
-  height: 151px;
+  min-height: 151px;
   padding: 29px 72px;
   box-sizing: border-box;
   margin: 0;
@@ -1180,11 +1187,11 @@ a:active {
 
 .hotel-name {
   min-width: 62%;
-  max-width: 72%;
+  max-width: 69%;
   margin: -6px auto 4px 30px;
 }
 
-.hotel-name a {  
+.hotel-name a {
   font-size: 22px;
   font-weight: 700;
   color: #000000;

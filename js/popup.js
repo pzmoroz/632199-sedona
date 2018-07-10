@@ -22,6 +22,11 @@ try {
   isStorageSupport = false;
 }
 
+var mapImage = document.querySelector(".town-map img");
+mapImage.style.display = 'none';
+var mapIframe = document.querySelector(".town-map iframe");
+mapIframe.style.display = 'block';
+
 btn.addEventListener("click", function (evt) {
   evt.preventDefault();
 
