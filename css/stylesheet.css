@@ -3,7 +3,7 @@ body {
   padding: 0;
   width: 1200px;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px;
@@ -21,8 +21,8 @@ body {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -152,7 +152,7 @@ a:active {
 }
 
 .container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: 0;
@@ -162,7 +162,7 @@ a:active {
 
   width: 1200px;
   height: 780px;
-  background: #ffffff url('../img/intro.jpg') no-repeat 0% 0%;
+  background: #ffffff url("../img/intro.jpg") no-repeat 0% 0%;
   z-index: -1;
 }
 
@@ -233,7 +233,7 @@ a:active {
 
 .reason-header::before {
   counter-increment: resons;
-  content: '— №' counter(resons) ' —';
+  content: "— №" counter(resons) " —";
 
   position: absolute;
   top: 113px;
@@ -307,15 +307,15 @@ a:active {
 }
 
 .reason-detail-hotels {
-  background: #ffffff url('../img/icon-1.svg') no-repeat 50% 23%;
+  background: #ffffff url("../img/icon-1.svg") no-repeat 50% 23%;
 }
 
 .reason-detail-food {
-  background: #ffffff url('../img/icon-3.svg') no-repeat 50% 23%;
+  background: #ffffff url("../img/icon-3.svg") no-repeat 50% 23%;
 }
 
 .reason-detail-things {
-  background: #ffffff url('../img/icon-2.svg') no-repeat 50% 22%;
+  background: #ffffff url("../img/icon-2.svg") no-repeat 50% 22%;
 }
 
 .reason-minors {
@@ -360,7 +360,7 @@ a:active {
 
 .reason-minor::before {
   counter-increment: resons;
-  content: '— №' counter(resons) ' —';
+  content: "— №" counter(resons) " —";
 
   position: absolute;
   top: 113px;
@@ -408,7 +408,7 @@ a:active {
 }
 
 .interest-header h2 {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: #000000;
@@ -560,7 +560,7 @@ a:active {
 }
 
 
-.search input[type='text'] {
+.search input[type="text"] {
   font-size: 14px;
   font-weight: bold;
   background-color: #f2f2f2;
@@ -589,7 +589,7 @@ a:active {
   opacity: 0.4;
 }
 
-.search-input-line-date input[type='text']::placeholder {
+.search-input-line-date input[type="text"]::placeholder {
   color: #000000;
 }
 
@@ -601,7 +601,7 @@ a:active {
   fill: #81b3d2;
 }
 
-.search-input-line-date input[type='text'] {
+.search-input-line-date input[type="text"] {
   padding-left: 11px;
   text-transform: uppercase;
 }
@@ -644,7 +644,7 @@ a:active {
   background-color: #f2f2f2;
 }
 
-.search-input-line-persons input[type='text'] {
+.search-input-line-persons input[type="text"] {
   display: block;
 
   width: 38px;
@@ -653,7 +653,7 @@ a:active {
 }
 
 .search-input-line-persons .minus::before {
-  content: '';
+  content: "";
 
   position: absolute;
   right: 13px;
@@ -666,7 +666,7 @@ a:active {
 }
 
 .search-input-line-persons .plus::before {
-  content: '';
+  content: "";
 
   position: absolute;
   right: 14px;
@@ -679,7 +679,7 @@ a:active {
 }
 
 .search-input-line-persons .plus::after {
-  content: '';
+  content: "";
 
   position: absolute;
   right: 18px;
@@ -706,11 +706,11 @@ a:active {
   outline: none;
 }
 
-.search input[type='text']:hover {
+.search input[type="text"]:hover {
   background-color: #ebebeb;
 }
 
-.search input[type='text']:focus {
+.search input[type="text"]:focus {
   background-color: #ffffff;
   outline: none;
   box-shadow: inset 0 0 0 2px #e5e5e5;
@@ -827,7 +827,7 @@ a:active {
   min-height: 218px;
   padding: 0 70px;
 
-  background: #647483 url('../img/filter-background.jpg') no-repeat 50% 50%;
+  background: #647483 url("../img/filter-background.jpg") no-repeat 50% 50%;
   overflow: hidden;
 }
 
@@ -886,7 +886,7 @@ a:active {
 }
 
 .filter-option-checkbox + label::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -39px;
   top: -1px;
@@ -894,13 +894,13 @@ a:active {
   width: 27px;
   height: 23px;
 
-  background-image: url('../img/checkbox-off.svg');
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter-option-checkbox:checked + label::before {
-  background-image: url('../img/checkbox-on.svg');
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -938,7 +938,7 @@ a:active {
 }
 
 .price-controls::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1221,7 +1221,7 @@ a:active {
   display: inline-block;
   width: 18px;
   height: 16px;
-  background-image: url('../img/star.svg');
+  background-image: url("../img/star.svg");
   background-repeat: space;
 }
 
@@ -1292,7 +1292,7 @@ a:active {
 }
 
 .hotel-rating span::before {
-  content: 'Рейтинг: '
+  content: "Рейтинг: "
 }
 
 .hotel-type-detail-button {
