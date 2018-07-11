@@ -548,6 +548,7 @@ a:active {
 }
 
 .search-input-line {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -573,12 +574,11 @@ a:active {
   align-self: center;
 }
 
-.search-input-line {
-  position: relative;
-}
-
 .search-input-line-date {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .search-input-line-calendar {
