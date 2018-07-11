@@ -276,6 +276,7 @@ a:active {
 }
 
 .reason-foto-img {
+  display: block;
   height: 256px;
 }
 
