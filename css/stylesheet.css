@@ -147,23 +147,7 @@ a:active {
 .container {
   display: block;
   text-align: center;
-  margin-top: 511px;
   background-color: #ffffff;
-}
-
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 1200px;
-  height: 780px;
-  background: #ffffff url("../img/intro.jpg") no-repeat 0% 0%;
-  z-index: -1;
 }
 
 .hotels-container {
@@ -178,6 +162,30 @@ a:active {
   margin-bottom: 39px;
 }
 
+.container-header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 508px;
+  background-color: #3a484e;
+  background-image:
+    url("../img/welcome.svg"),
+    url("../img/polygon.svg"),
+    url("../img/intro.jpg");
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position:
+    bottom 80px center,
+    bottom,
+    center;
+  background-size:
+    458px 352px,
+    1200px 57px,
+    1200px 508px;
+}
+
 .container-header h1 {
   display: block;
   font-size: 21px;
@@ -187,7 +195,7 @@ a:active {
   color: #000000;
   width: 470px;
   align-self: center;
-  margin-top: 57px;
+  margin-top: 60px;
   margin-bottom: 16px;
   padding: 0 0px;
 }
