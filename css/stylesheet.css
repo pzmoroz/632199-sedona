@@ -1250,8 +1250,7 @@ a:active {
 
 .hotel-type {
   margin-left: 165px;
-  margin-bottom: 10px;
-  margin-right: -2px;
+  margin-right: 3px;
 }
 
 
@@ -1260,6 +1259,7 @@ a:active {
 .hotel-type a,
 .hotel-price a {
   display: block;
+  margin-top: 14px;
   letter-spacing: 0.2px;
 }
 
