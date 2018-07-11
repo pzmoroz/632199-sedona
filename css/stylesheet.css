@@ -1114,6 +1114,7 @@ a:active {
 .sorting-type a:active {
   color: #000000;
   background: #ffffff;
+  text-decoration: none;
 }
 
 .sorting-direction {
