@@ -27,6 +27,9 @@ mapImage.style.display = 'none';
 var mapIframe = document.querySelector('.town-map iframe');
 mapIframe.style.display = 'block';
 
+popup.classList.remove('search-modal-show');
+popup.classList.add('search-modal-close');
+
 btn.addEventListener('click', function (evt) {
   evt.preventDefault();
 
