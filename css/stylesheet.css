@@ -154,7 +154,6 @@ a:active {
   display: block;
 }
 
-
 .container-header {
   display: flex;
   flex-direction: column;
@@ -356,8 +355,6 @@ a:active {
   margin-bottom: 66px;
 }
 
-
-
 .reason-minor p {
   color: #333333;
   letter-spacing: 0.1px;
@@ -399,7 +396,6 @@ a:active {
 }
 
 .interest-wrapper {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -426,7 +422,6 @@ a:active {
 
   margin-top: 50px;
   margin-bottom: 24px;
-
 }
 
 .interest-header p {
@@ -569,7 +564,6 @@ a:active {
   letter-spacing: 0.5px;
 }
 
-
 .search input[type="text"] {
   font-size: 14px;
   font-weight: bold;
@@ -644,7 +638,6 @@ a:active {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
-  /* margin-top: -10px; */
   outline: none;
 }
 
@@ -698,7 +691,6 @@ a:active {
   height: 11px;
   background-color: black;
   opacity: 0.4;
-
 }
 
 .search-input-line-persons .minus:hover::before,
@@ -748,7 +740,6 @@ a:active {
   box-sizing: border-box;
   z-index: 3;
 }
-
 
 .main-footer-hotels {
   top: 0;
@@ -846,7 +837,6 @@ a:active {
   padding-top: 27px;
 }
 
-
 .filter fieldset {
   padding: 0;
   margin: 0;
@@ -887,7 +877,6 @@ a:active {
 
   cursor: pointer;
   user-select: none;
-
 }
 
 .filter-option-checkbox:focus+label {
@@ -922,7 +911,6 @@ a:active {
   width: 318px;
   margin-left: auto;
   margin-right: 2px;
-
 }
 
 .filter-range-title {
@@ -1150,14 +1138,13 @@ a:active {
   fill: #81b3d2;
 }
 
-.hotels{
+.hotels {
   background: #ffffff;
 }
 
 .hotels table {
   width: 100%;
   border-collapse: collapse;
-
 }
 
 .hotels tr {
@@ -1194,7 +1181,6 @@ a:active {
   margin: 0;
   padding: 0;
 }
-
 
 .hotel-name {
   min-width: 62%;
@@ -1261,9 +1247,6 @@ a:active {
   margin-left: 165px;
   margin-right: 3px;
 }
-
-
-
 
 .hotel-type a,
 .hotel-price a {
