@@ -1287,31 +1287,25 @@ a:active {
 }
 
 .hotel-type-detail-button {
-  font-size: 14px;
   color: #ffffff;
   background-color: #81b3d2;
 }
 
 .hotel-type-detail-button:hover {
-  font-size: 14px;
-  color: #ffffff;
   background-color: #669ec0;
 }
 
 .hotel-type-detail-button:active {
-  font-size: 14px;
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
 .hotel-type-booking-button {
-  font-size: 14px;
   color: #ffffff;
   background-color: #766357;
 }
 
 .hotel-type-booking-button:hover {
-  color: #ffffff;
   background-color: #604e43;
 }
 
