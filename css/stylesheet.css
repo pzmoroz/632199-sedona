@@ -147,23 +147,7 @@ a:active {
 .container {
   display: block;
   text-align: center;
-  margin-top: 511px;
   background-color: #ffffff;
-}
-
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 1200px;
-  height: 780px;
-  background: #ffffff url("../img/intro.jpg") no-repeat 0% 0%;
-  z-index: -1;
 }
 
 .hotels-container {
@@ -178,6 +162,30 @@ a:active {
   margin-bottom: 39px;
 }
 
+.container-header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 508px;
+  background-color: #3a484e;
+  background-image:
+    url("../img/welcome.svg"),
+    url("../img/polygon.svg"),
+    url("../img/intro.jpg");
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position:
+    bottom 80px center,
+    bottom,
+    center;
+  background-size:
+    458px 352px,
+    1200px 57px,
+    1200px 508px;
+}
+
 .container-header h1 {
   display: block;
   font-size: 21px;
@@ -187,7 +195,7 @@ a:active {
   color: #000000;
   width: 470px;
   align-self: center;
-  margin-top: 57px;
+  margin-top: 60px;
   margin-bottom: 16px;
   padding: 0 0px;
 }
@@ -276,6 +284,7 @@ a:active {
 }
 
 .reason-foto-img {
+  display: block;
   height: 256px;
 }
 
@@ -548,6 +557,7 @@ a:active {
 }
 
 .search-input-line {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -573,12 +583,11 @@ a:active {
   align-self: center;
 }
 
-.search-input-line {
-  position: relative;
-}
-
 .search-input-line-date {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .search-input-line-calendar {
@@ -807,7 +816,7 @@ a:active {
 }
 
 .footer-copyright span {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .footer-copyright a:hover path {
@@ -1250,25 +1259,16 @@ a:active {
 
 .hotel-type {
   margin-left: 165px;
-  margin-bottom: 10px;
-  position: relative;
-  width: 115px;
-  margin-right: -2px;
+  margin-right: 3px;
 }
 
 
 
-.hotel-price {
-  position: relative;
-}
 
 .hotel-type a,
 .hotel-price a {
   display: block;
-  position: absolute;
-  top: 36px;
-  left: 0px;
-
+  margin-top: 14px;
   letter-spacing: 0.2px;
 }
 
@@ -1296,31 +1296,25 @@ a:active {
 }
 
 .hotel-type-detail-button {
-  font-size: 14px;
   color: #ffffff;
   background-color: #81b3d2;
 }
 
 .hotel-type-detail-button:hover {
-  font-size: 14px;
-  color: #ffffff;
   background-color: #669ec0;
 }
 
 .hotel-type-detail-button:active {
-  font-size: 14px;
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
 .hotel-type-booking-button {
-  font-size: 14px;
   color: #ffffff;
   background-color: #766357;
 }
 
 .hotel-type-booking-button:hover {
-  color: #ffffff;
   background-color: #604e43;
 }
 
