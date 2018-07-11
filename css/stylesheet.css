@@ -1251,24 +1251,16 @@ a:active {
 .hotel-type {
   margin-left: 165px;
   margin-bottom: 10px;
-  position: relative;
   width: 115px;
   margin-right: -2px;
 }
 
 
 
-.hotel-price {
-  position: relative;
-}
 
 .hotel-type a,
 .hotel-price a {
   display: block;
-  position: absolute;
-  top: 36px;
-  left: 0px;
-
   letter-spacing: 0.2px;
 }
 
